@@ -24,13 +24,29 @@
 
             <script type = "text/jsx">
                 const app = document.getElementById("app")
-                function Header() {
+                function Header(props) {
+                    console.log(props)
                     return (<h1>Lorem ipsum</h1>)
                 }
                 function Home() {
+                    const names = ['zaazlkdj', 'oao', 'ekkr'];
+                    let compteur = 0
+                    function handleClick(){
+                        console.log("incrementer le compteur")
+                        compteur = compteur + 1;
+                        console.log(compteur);
+                    }
+    
                     return(
                         <div>
-                            <Header />
+                            <Header title="Apprendre React" />
+                            <ul>
+                              {names.map((name) => (
+                                <li key={name}>{name}</li>
+                              ))} 
+    
+                              </ul>
+                              <button onClick={handleClick}>Compteur {compteur}</button>
                         </div>
                     );
                 }
