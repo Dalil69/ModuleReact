@@ -24,10 +24,17 @@
 
             <script type = "text/jsx">
                 const app = document.getElementById("app")
-                function header() {
+                function Header() {
                     return (<h1>Lorem ipsum</h1>)
                 }
-                ReactDOM.render(header, app);
+                function Home() {
+                    return(
+                        <div>
+                            <Header />
+                        </div>
+                    );
+                }
+                ReactDOM.render(<Home/>, app);
                 </script>
                 
             </script>
