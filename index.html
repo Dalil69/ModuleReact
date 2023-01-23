@@ -5,7 +5,6 @@
             <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
             <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
             <script type="text/javascript">
-                const app = document.getElementById('app');
                 const header = document.createElement('h1');
                 const headerContent = document.createTextNode(
                     'De l\'html crée avec Javascript!'
@@ -14,6 +13,13 @@
                 header.append(headerContent);
 
                 app.appendChild(header);
+            </script>
+            <!-- Babel Script -->
+            <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+            <script type="text/jsx">
+                const app = document.getElementById('app');
+                ReactDOM.render(<h1>Lorem Ipsum</h1>, app);
+            
             </script>
         <h5>react</h5>
         <h1>Isitech</h1>
