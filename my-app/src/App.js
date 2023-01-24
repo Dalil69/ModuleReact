@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 function App(props) {
-  const numbers = props.numbers;
-  const listItems = numbers.map((number, index) =>
-    <li key={index}>{number}</li>
+  const listItems = produit.map((produit, index) =>
+    <li key={index}>{produit}<button onClick={() => alert(`Payment for ${produit}`)}>Pay</button></li>
   );
+  
   return (
     <div>
       <h1>C'est parti </h1>
@@ -13,9 +13,9 @@ function App(props) {
     </div>
   );
 }
-const numbers = [1, 2, 3, 4, 5];
+const produit = ['Voiture location', 'Abonnement Netflux', 'Pc portable', 'Micro'];
 ReactDOM.render(
-  <App numbers={numbers} />,
+  <App produit={produit} />,
   document.getElementById('root')
 );
 
