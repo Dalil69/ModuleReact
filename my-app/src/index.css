@@ -1,13 +1,98 @@
+/* Code CSS */
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  padding: 0;
+  }
+  
+  h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #333;
+  }
+  
+  ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  }
+  
+  li {
+  display: inline-block;
+  margin: 10px;
+  }
+  
+  button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  }
+  
+  button:hover {
+  background-color: #3e8e41;
+  }
+  
+  /* Ajoutez une requête de media pour les écrans plus petits */
+  @media only screen and (max-width: 600px) {
+  li {
+  display: block;
+  margin: 10px 0;
+  }
+  }
+  
+  /* Ajoutez quelques styles pour le bouton 'Pay' */
+  .pay-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  }
+  
+  .pay-button:hover {
+  background-color: #3e8e41;
+  }
+  /* Ajoutez une marge pour séparer les éléments de la liste */
+li {
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  }
+  
+  /* Centrez le texte dans chaque élément de la liste */
+  li {
+  text-align: center;
+  }
+  
+  /* Donnez un style spécifique au bouton 'Pay' */
+  .pay-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+  }
+  
+  /* Changez la couleur de fond lorsque vous passez sur le bouton 'Pay' */
+  .pay-button:hover {
+  background-color: #3e8e41;
+  }
+  
+  /* Ajoutez une bordure pour mettre en évidence l'élément sélectionné */
+  .selected {
+  border: 2px solid #4CAF50;
+  }
+  
+  /* Ajoutez un style pour les messages d'erreur */
+  .error {
+  color: red;
+  font-size: 0.8em;
+  margin-top: 5px;
+  }
