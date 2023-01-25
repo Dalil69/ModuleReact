@@ -23,6 +23,7 @@ h1 {
   animation: pulse 2s ease-in-out infinite;
 }
 
+
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -102,4 +103,32 @@ h1 {
   button:hover {
     transform: scale(1.1);
   }
-  
+.wave-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 200%;
+  height: 100%;
+  background-image: url('https://o.remove.bg/downloads/924e0ef8-5697-489c-b516-cee68ccae2da/16022508131314957514007464-removebg-preview.png');
+  background-repeat: repeat-x;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+  animation: wave-animation 8s linear infinite;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
