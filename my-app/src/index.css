@@ -121,6 +121,7 @@ h1 {
   background-position: 0 bottom;
   transform-origin: center bottom;
   animation: wave-animation 8s linear infinite;
+  opacity: 20%;
 }
 
 @keyframes wave-animation {
