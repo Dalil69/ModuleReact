@@ -16,13 +16,25 @@ body {
   box-sizing: border-box;
 }
 
-  
-  h1 {
+h1 {
   text-align: center;
   margin-top: 50px;
   font-size: 3em;
-  text-shadow: 2px 2px #ccc;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
   }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
   
   .container {
   max-width: 1200px;
@@ -82,4 +94,12 @@ body {
   button:hover {
   background-color: #3e8e41;
   };
-
+  
+  button {
+    transition: transform 0.5s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
+  
